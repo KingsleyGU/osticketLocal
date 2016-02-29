@@ -32,7 +32,7 @@ if (($lang = Internationalization::getCurrentLanguage())
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor.min.js?19292ad"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-osticket.js?19292ad"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-fonts.js?19292ad"></script>
-    <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery.magnific-popup.js"></script>
+
     
     <script type="text/javascript" src="./js/bootstrap-typeahead.js?19292ad"></script>
     <link rel="shortcut icon" href="<?php echo ROOT_PATH; ?>images/Responza/responza-logo.png">
@@ -46,7 +46,7 @@ if (($lang = Internationalization::getCurrentLanguage())
     <!--[if IE 7]>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome-ie7.min.css?19292ad"/>
     <![endif]-->
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css//magnific-popup.css"/>
+
     <link type="text/css" rel="stylesheet" href="./css/dropdown.css?19292ad"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/loadingbar.css?19292ad"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/rtl.css?19292ad"/>
