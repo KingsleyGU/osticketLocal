@@ -20,8 +20,6 @@ if (($lang = Internationalization::getCurrentLanguage())
         .tip_shadow { display:block !important; }
     </style>
     <![endif]-->
-
-   <!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js?19292ad"></script> -->
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery-1.8.3.min.js?19292ad"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/jquery-ui-1.10.3.custom.min.js?19292ad"></script>
     <script type="text/javascript" src="./js/scp.js?19292ad"></script>
@@ -32,10 +30,7 @@ if (($lang = Internationalization::getCurrentLanguage())
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor.min.js?19292ad"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-osticket.js?19292ad"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-fonts.js?19292ad"></script>
-
-    
     <script type="text/javascript" src="./js/bootstrap-typeahead.js?19292ad"></script>
-    <link rel="shortcut icon" href="<?php echo ROOT_PATH; ?>images/Responza/responza-logo.png">
     <link rel="stylesheet" href="<?php echo ROOT_PATH ?>css/thread.css?19292ad" media="all"/>
     <link rel="stylesheet" href="./css/scp.css?19292ad" media="all"/>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/redactor.css?19292ad" media="screen"/>
@@ -46,13 +41,9 @@ if (($lang = Internationalization::getCurrentLanguage())
     <!--[if IE 7]>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome-ie7.min.css?19292ad"/>
     <![endif]-->
-
     <link type="text/css" rel="stylesheet" href="./css/dropdown.css?19292ad"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/loadingbar.css?19292ad"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/rtl.css?19292ad"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/osticket-responza.css"/>
-    <!-- <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/bootstrap.min.css"/> -->
-
     <script type="text/javascript" src="./js/jquery.dropdown.js?19292ad"></script>
 
     <?php
@@ -74,7 +65,7 @@ if (($lang = Internationalization::getCurrentLanguage())
     <div id="header">
         <p id="info" class="pull-right no-pjax"><?php echo sprintf(__('Welcome, %s.'), '<strong>'.$thisstaff->getFirstName().'</strong>'); ?>
            <?php
-            if($originalStaff['isAdmin'] && !defined('ADMINPAGE')) { ?>
+            if($thisstaff->isAdmin() && !defined('ADMINPAGE')) { ?>
             | <a href="admin.php" class="no-pjax"><?php echo __('Admin Panel'); ?></a>
             <?php }else{ ?>
             | <a href="index.php" class="no-pjax"><?php echo __('Agent Panel'); ?></a>
