@@ -466,6 +466,7 @@ $tcount+= $ticket->getNumNotes();
         <li><a id="assign_tab" href="#assign"><?php echo $ticket->isAssigned()?__('Reassign Ticket'):__('Assign Ticket'); ?></a></li>
         <?php
         } ?>
+        <li><a id="Responza_KB" href="#responza-Knowledge"><?php echo __('Svarbasen');?></a></li>
     </ul>
     <?php
     if($thisstaff->canPostReply()) { ?>
