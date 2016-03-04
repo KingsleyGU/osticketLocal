@@ -104,7 +104,8 @@ div#header a {
     text-decoration:none;
     outline:none;
     /*max-width: 60px;*/
-    padding: 5px 0 7px 5px;
+    /*padding: 5px 0 7px 5px;*/
+    padding: 8px;
 }
 #logo:hover{
     background-color: #9c9c9c;
@@ -118,6 +119,7 @@ div#header a {
     vertical-align: middle;
     outline: none;
     border: none;
+    margin:10px;
 }
 .valign-helper {
     height: 100%;
