@@ -103,7 +103,7 @@ div#header a {
     display:block;
     text-decoration:none;
     outline:none;
-    max-width: 60px;
+    /*max-width: 60px;*/
     padding: 5px 0 7px 5px;
 }
 #logo:hover{
@@ -112,7 +112,7 @@ div#header a {
 
 #logo img {
     max-height: 66px;
-    max-width: 60px;
+    /*max-width: 60px;*/
     height: auto;
     width: auto;
     vertical-align: middle;
