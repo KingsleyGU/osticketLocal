@@ -16,7 +16,7 @@
 **********************************************************************/
 require('client.inc.php');
 require_once(INCLUDE_DIR.'class.file.php');
-header('Content-type: charset=utf-8');
+header('Content-type: text/plain; charset=utf-8');
 //Basic checks
 if (!$_GET['key']
     || !$_GET['signature']
