@@ -181,8 +181,7 @@ class AttachmentFile {
                 return;
             }
         }
-        header('Content-type: charset=utf-8');
-        header('Content-Type: '.($this->getType()?$this->getType():'application/octet-stream'));
+        header('Content-Type: '.($this->getType()?$this->getType():'application/octet-stream').';charset=utf-8');
         header('Content-Length: '.$this->getSize());
         $this->sendData();
         exit();
