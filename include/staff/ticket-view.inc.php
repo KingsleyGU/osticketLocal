@@ -988,11 +988,11 @@ $tcount+= $ticket->getNumNotes();
 </div>
 <script type="text/javascript">
 $(function() {
-    $(".response .thread-body").css("display","none");
-    $(".note .thread-body").css("display","none");
-    $(".thread-entry th").click(function(){
-        $(this).parents(".thread-entry").find(".thread-body").toggle();
-    });      
+    // $(".response .thread-body").css("display","none");
+    // $(".note .thread-body").css("display","none");
+    // $(".thread-entry th").click(function(){
+    //     $(this).parents(".thread-entry").find(".thread-body").toggle();
+    // });      
     $(document).on('click', 'a.change-user', function(e) {
         e.preventDefault();
         var tid = <?php echo $ticket->getOwnerId(); ?>;
