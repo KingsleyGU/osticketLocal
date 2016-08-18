@@ -103,9 +103,8 @@ div#header a {
     display:block;
     text-decoration:none;
     outline:none;
-    /*max-width: 60px;*/
-    /*padding: 5px 0 7px 5px;*/
-    padding: 8px;
+    max-width: 60px;
+    padding: 5px 0 7px 5px;
 }
 #logo:hover{
     background-color: #9c9c9c;
@@ -113,16 +112,15 @@ div#header a {
 
 #logo img {
     max-height: 66px;
-    /*max-width: 60px;*/
+    max-width: 60px;
     height: auto;
     width: auto;
     vertical-align: middle;
     outline: none;
     border: none;
-    margin:10px;
 }
 .valign-helper {
-    height: 100%;
+    /*height: 100%;*/
     display: inline-block;
     vertical-align: middle;
 }
@@ -130,19 +128,29 @@ div#header a {
 #header p {
     display:block;
     width:auto;
-    max-width:630px;
+    min-width:430px;
     margin:10px;
     background-color: rgba(255,255,255, 0.7);
     border-radius:5px; 
     padding:8px;
     text-align:center;
 }
-
+#basic-ticket-search
+{
+    min-height: 25px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    border: #999 1px solid;
+    min-width: 280px;
+    font-size: 16px;
+}
 #nav, #sub_nav {
     clear:both;
     margin:0;
     padding:0 20px;
-    height:26px;
+    height:36px;
     line-height:26px;
     border-left:1px solid #aaa;
     border-right:1px solid #aaa;
@@ -167,8 +175,7 @@ div#header a {
     display:inline-block;
     min-width:95px;
     width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px;
     height:26px;
     color:#555;
     text-align:center;
@@ -274,7 +281,7 @@ div#header a {
 
 #sub_nav a {
     display:inline-block;
-    padding:0 10px 0 21px;
+    padding:5px 10px 5px 21px;
     background-position:0 50%;
     background-repeat:no-repeat;
     color:#000;
@@ -574,13 +581,24 @@ a.print {
 
 #actions button, .button { padding:2px 5px 3px; margin-right:10px;  color:#777;}
 
+#response_options form select,.postNoteTitle{
+    padding: 4px 0px;
+    border-radius: 4px;
+    margin: 5px 0px;
+}
+#response_options form select option{
+    margin: 2px;
+    line-height: 15px;
+}
 .btn_sm {
-    padding:2px 5px;
-    font-size:9pt;
+    padding:5px 10px;
+    font-size:16px;
     background:url(../images/btn_sm_bg.png) top left repeat-x #f90;
-    border:1px solid #777;
+    border:1px solid #e80;
+    border-radius: 5px;
     color:#fff;
     font-weight:bold;
+    margin-right: 20px;
 }
 
 .btn:hover, .btn_sm:hover {
@@ -789,7 +807,8 @@ h2 .reload {
 #threads {
     margin:0;
     padding:5px 10px 0 10px;
-    border:1px solid #aaa;
+    border:2px solid #337ab7;
+    border-top: none;
     background:#F4FAFF;
     height:30px;
 }
@@ -832,8 +851,8 @@ h2 .reload {
 #ticket_thread table.response,
 #ticket_thread table.note {
     margin-top:10px;
-    border:1px solid #aaa;
-    border-bottom:2px solid #aaa;
+    border:2px solid #337ab7;
+    border-bottom:2px solid #337ab7;
 }
 
 #ticket_notes table {
@@ -902,7 +921,8 @@ h2 .reload {
 }
 
 #response_options {
-    margin-top:30px;
+    margin-top: 30px;
+    background-color: #eef3f8;
 }
 
 #response_options > form {
@@ -910,13 +930,10 @@ h2 .reload {
 }
 
 ul.tabs {
-    padding:4px 0 0 20px;
-    margin:0;
-    margin-bottom: 5px;
-    text-align:left;
-    height:29px;
-    border-bottom:1px solid #aaa;
-    background:#eef3f8;
+    padding: 6px 0 0 2px;
+    margin: 0;
+    text-align: left;
+    background: #fff;
 }
 
 #response_options ul.tabs {
@@ -928,27 +945,29 @@ ul.tabs {
 }
 
 ul.tabs li {
-    margin:0;
+    margin:0px 10px;
     padding:0;
     display:inline;
     list-style:none;
 }
 
 ul.tabs li a {
-    min-width:130px;
-    font-weight:bold;
-    padding:5px;
-    height:18px;
-    line-height:20px;
-    color:#444;
-    display:inline-block;
-    outline:none;
-    position:relative;
-    bottom:1px;
-    background:#fbfbfb;
-    border:1px solid #eee;
-    border-bottom:none;
+    min-width: 200px;
+    font-weight: bold;
+    padding: 5px;
+    height: 28px;
+    line-height: 28px;
+    color: #337ab7 !important;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    bottom: 1px;
+    background: #fbfbfb;
+    border: 1px solid #eee;
+    border-bottom: none;
     text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #response_options .reply_tab.tell {
@@ -962,12 +981,9 @@ ul.tabs li a {
     height: 500px;
 }
 ul.tabs li a.active {
-    height:18px;
-    color:#184E81;
-    background-color:#f9f9f9;
-    border:1px solid #aaa;
-    border-top:2px solid #81a9d7;
-    border-bottom:none;
+    color: #fff !important;
+    background-color: #337ab7;
+    border-bottom: none;
     bottom: 0;
 }
 #responza-iframe
@@ -975,11 +991,12 @@ ul.tabs li a.active {
     width: 100%;
     height:900px;
 }
-#response_options > form {
-    padding:10px 5px;
+#response_options > form, #responza-Knowledge{
+    padding:20px 20px;
     background:#f9f9f9;
-    border:1px solid #aaa;
-    border-top:none;
+    border:2px solid #337ab7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #response_options > form > table {
