@@ -82,7 +82,7 @@ if($ticket->isOverdue())
                     && !$ticket->isAssigned()
                     && $thisstaff->canAssignTickets()
                     && $ticket->getDept()->isMember($thisstaff)) {?>
-                <a id="ticket-claim" class="action-button pull-right confirm-action" href="#claim"><i class="icon-user"></i> <?php
+                <a id="ticket-claim" class="action-button pull-right confirm-action btn-default" href="#claim"><i class="icon-user"></i> <?php
                     echo __('Claim'); ?></a>
 
             <?php
