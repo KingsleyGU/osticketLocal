@@ -64,7 +64,7 @@ if($ticket->isOverdue())
             if ($thisstaff->canBanEmails()
                     || $thisstaff->canEditTickets()
                     || ($dept && $dept->isManager($thisstaff))) { ?>
-            <span class="action-button pull-right" data-dropdown="#action-dropdown-more">
+            <span class="action-button pull-right btn-primary" data-dropdown="#action-dropdown-more">
                 <i class="icon-caret-down pull-right"></i>
                 <span ><i class="icon-cog"></i> <?php echo __('More');?></span>
             </span>
@@ -74,7 +74,7 @@ if($ticket->isOverdue())
             echo TicketStatus::status_options();
 
             if ($thisstaff->canEditTickets()) { ?>
-                <a class="action-button pull-right" href="tickets.php?id=<?php echo $ticket->getId(); ?>&a=edit"><i class="icon-edit"></i> <?php
+                <a class="action-button pull-right btn-warning" href="tickets.php?id=<?php echo $ticket->getId(); ?>&a=edit"><i class="icon-edit"></i> <?php
                     echo __('Edit'); ?></a>
             <?php
             }
@@ -87,7 +87,7 @@ if($ticket->isOverdue())
 
             <?php
             }?>
-            <span class="action-button pull-right" data-dropdown="#action-dropdown-print">
+            <span class="action-button pull-right btn-success" data-dropdown="#action-dropdown-print">
                 <i class="icon-caret-down pull-right"></i>
                 <a id="ticket-print" href="tickets.php?id=<?php echo $ticket->getId(); ?>&a=print"><i class="icon-print"></i> <?php
                     echo __('Print'); ?></a>
