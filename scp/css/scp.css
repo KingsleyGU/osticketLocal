@@ -2075,7 +2075,7 @@ table.custom-info td {
 .btn-default {
     color: #333 !important;
     background-color: #fff !important;
-    border-color: #ccc !important;
+    border: solid 1px #ddd;
 }
 .btn-default:hover {
     color: #333;
