@@ -2073,9 +2073,9 @@ table.custom-info td {
     border-color: #eea236;
 }
 .btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
 }
 .btn-default:hover {
     color: #333;
